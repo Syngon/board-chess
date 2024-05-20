@@ -1,0 +1,40 @@
+public static String readStringFromURL(String requestURL) throws IOException{
+	    try (Scanner scanner = new Scanner(new URL(requestURL).openStream(),
+	            StandardCharsets.UTF_8.toString()))
+	    {
+	        scanner.useDelimiter("\\A");
+	        return scanner.hasNext() ? scanner.next() : "";
+	    }
+    }
+
+
+
+readStringFromURL( "http://localhost/xadrez/GetInfo.php?login=" + textFieldEmail.getText()+ "&senha=" + passwordFieldSenha.getText() + "&nome=" + pegaTroxa.getText() );
+
+
+
+
+/*public void OpenLore(ActionEvent event){
+        ImageView imgNumber = ((ImageView)event.getTarget());
+        String idMB = imgNumber.getId();
+        
+        retArmengue.setVisible(true);
+        bordaExterior.setVisible(true); 
+        //descPersonagem.setVisible(true);
+        
+        switch(idMB){
+        
+            case "imgEren":
+                
+                //engine.load("http://pt-br.shingeki-no-kyojin.wikia.com/wiki/Eren_J%C3%A4ger");
+                break;
+                
+            
+        }
+    }*/
+    
+    
+    //public WebView descPersonagem;
+    //public WebEngine engine = descPersonagem.getEngine();
+    public Rectangle bordaExterior;
+    public Rectangle retArmengue;

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(&quot;file:src/assets/bgMp3.gif&quot;); -fx-background-position: center center; fx-background-size: cover;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chess.Mp3.Mp3Controller">
+   <children>
+      <ImageView fx:id="pascoagif" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@../../assets/pascoa_gif.gif" />
+         </image>
+      </ImageView>
+      <Text fx:id="NowPlaying" fill="WHITE" layoutX="53.0" layoutY="360.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" wrappingWidth="463.8400001525879">
+         <font>
+            <Font name="Commando" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="27.0" layoutY="327.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" text="Now Playing:" textAlignment="CENTER">
+         <font>
+            <Font name="Commando" size="30.0" />
+         </font>
+      </Text>
+      <MenuButton layoutX="431.0" layoutY="14.0" mnemonicParsing="false" text="Musica">
+        <items>
+          <MenuItem fx:id="MB1" mnemonicParsing="false" onAction="#menuItemAction" text="Just Another Hero" />
+          <MenuItem fx:id="MB2" mnemonicParsing="false" onAction="#menuItemAction" onMenuValidation="#menuItemAction" text="The Day" />
+            <MenuItem fx:id="MB3" mnemonicParsing="false" onAction="#menuItemAction" text="Lost Woods" />
+            <MenuItem fx:id="MB4" mnemonicParsing="false" onAction="#menuItemAction" text="Sadness and Sorrow" />
+            <MenuItem fx:id="MB5" mnemonicParsing="false" onAction="#menuItemAction" text="Strong and Strike" />
+            <MenuItem fx:id="MB6" mnemonicParsing="false" onAction="#menuItemAction" text="Cha La Head Cha La" />
+            <MenuItem fx:id="MB7" mnemonicParsing="false" onAction="#menuItemAction" text="Dan Dan Kokoro" />
+            <MenuItem fx:id="MB8" mnemonicParsing="false" onAction="#menuItemAction" text="We Gotta Power" />
+            <MenuItem fx:id="MB9" mnemonicParsing="false" onAction="#menuItemAction" text="We Are" />
+            <MenuItem fx:id="MB10" mnemonicParsing="false" onAction="#menuItemAction" text="Hero" />
+        </items>
+         <font>
+            <Font name="Commando" size="15.0" />
+         </font>
+      </MenuButton>
+      <Button layoutX="360.0" layoutY="14.0" mnemonicParsing="false" onAction="#pauseMusic" text="Pause" textAlignment="CENTER">
+         <font>
+            <Font name="Commando" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="292.0" layoutY="14.0" mnemonicParsing="false" onAction="#playMusic" prefHeight="27.0" prefWidth="57.0" text="play" textAlignment="CENTER">
+         <font>
+            <Font name="Commando" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="292.0" layoutY="57.0" mnemonicParsing="false" onAction="#volumeIncrease" text="Vol +" textAlignment="CENTER">
+         <font>
+            <Font name="Commando" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="360.0" layoutY="57.0" mnemonicParsing="false" onAction="#volumeDecrease" prefHeight="27.0" prefWidth="57.0" text="Vol -" textAlignment="CENTER">
+         <font>
+            <Font name="Commando" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="431.0" layoutY="57.0" mnemonicParsing="false" onAction="#StopMusic" prefHeight="27.0" prefWidth="86.0" text="stop" textAlignment="CENTER">
+         <font>
+            <Font name="Commando" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="534.0" layoutY="365.0" mnemonicParsing="false" onAction="#Secrets" opacity="0.0" text="Button" />
+      <Text fx:id="creditos" fill="WHITE" layoutX="19.0" layoutY="32.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0">
+         <font>
+            <Font name="Commando" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

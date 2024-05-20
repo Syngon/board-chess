@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="chess.Menu.JavaNaoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Text fill="WHITE" layoutX="34.0" layoutY="229.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="#JavaNao" wrappingWidth="532.7797241210938">
+         <font>
+            <Font name="Commando" size="110.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
